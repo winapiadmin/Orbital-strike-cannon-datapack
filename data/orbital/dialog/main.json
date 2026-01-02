@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "NUCLEAR SUITCASE",
+    "color": "#ff0000"
+  },
+  "inputs": [],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "exit_action": {
+    "label": "EXIT"
+  },
+  "actions": [
+    {
+      "label": {
+        "text": "Add charge"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "orbital:add_charge"
+      }
+    },
+    {
+      "label": {
+        "text": "Remove all charges"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger remove_all_charges"
+      }
+    },
+    {
+      "label": {
+        "text": "Charges list"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger charges_list"
+      }
+    },
+    {
+      "label": {
+        "text": "Delete nearest"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger delete_nearest"
+      }
+    },
+    {
+      "label": {
+        "text": "LAUNCH CHARGES",
+        "color": "#ff0000"
+      },
+      "width": 302,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger launch"
+      }
+    }
+  ]
+}

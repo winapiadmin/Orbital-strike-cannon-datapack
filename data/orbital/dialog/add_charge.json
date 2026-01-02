@@ -1,0 +1,84 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "NUCLEAR SUITCASE",
+    "extra": [
+      ""
+    ],
+    "color": "#ff0000"
+  },
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Select charge type"
+    }
+  },
+  "inputs": [],
+  "can_close_with_escape": true,
+  "pause": false,
+  "exit_action": {
+    "label": {
+      "text": "EXIT"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "orbital:main"
+    }
+  },
+  "actions": [
+    {
+      "label": {
+        "text": "STAB POWER 1"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger add_stab_charge set 1"
+      }
+    },
+    {
+      "label": {
+        "text": "NUKE POWER 1"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger add_nuke_charge set 1"
+      }
+    },
+    {
+      "label": {
+        "text": "STAB POWER 2"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger add_stab_charge set 2"
+      }
+    },
+    {
+      "label": {
+        "text": "NUKE POWER 2"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger add_nuke_charge set 2"
+      }
+    },
+    {
+      "label": {
+        "text": "STAB POWER 3"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger add_stab_charge set 3"
+      }
+    },
+    {
+      "label": {
+        "text": "NUKE POWER 3"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger add_nuke_charge set 3"
+      }
+    }
+  ]
+}
