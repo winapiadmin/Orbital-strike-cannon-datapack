@@ -1,0 +1,1 @@
+gamerule max_command_forks 999999999
